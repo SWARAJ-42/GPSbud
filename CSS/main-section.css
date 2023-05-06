@@ -107,4 +107,22 @@ body {
     padding: 5px 15px;
     border: 2px solid white;
     border-radius: 5px;
+    cursor: pointer;
+    transition: .6s ease;
+}
+
+.Main-section .Intro-div .Explore-button:hover {
+    color: black;
+    background: white;
+}
+
+.Main-section .Intro-div .Know-more {
+    font-size: 15px;
+    text-decoration: none;
+    transition: transform 0.4s;
+}
+
+.Know-more:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
