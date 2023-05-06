@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+#bgVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+}
+
+.Main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+
+/* Navigation Styling */
+.navigation {
+    display: flex;
+    height: 10vh;
+    min-height: 94.7px;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.navigation .navigation-left img {
+    width: 64px;
+    height: 64px;
+}
+
+.navigation {
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.navigation .navigation-left {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    font-size: 20px;
+    color: white;
+}
+
+
+.navigation .navigation-right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 80%;
+}
+
+/* Heading, Description and Button */
+.Main-section .Intro-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main-section .Intro-div .Heading {
+    text-align: center;
+    font-size: 150px;
+    font-weight: 700;
+    color: white;
+    margin: auto;
+}
+.Main-section .Intro-div .Description {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: auto;
+}
+.Main-section .Intro-div .Explore-button {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 20px;
+    color: white;
+    background: none;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
