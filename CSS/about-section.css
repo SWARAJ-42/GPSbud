@@ -14,7 +14,7 @@
 
 .About-section .Description {
     text-align: center;
-    width: 30%;
+    width: 50%;
     font-size: 20px;
     color: white;
     margin: 20px 0px;
@@ -40,4 +40,14 @@
         0 0 10px #0ff,
         0 0 20px #0ff,
         0 0 40px #0ff;
+}
+
+@media only screen and (max-width: 1300px) {
+    .About-section {
+        padding: 100px 10px;
+    }
+    .About-section .Description {
+        text-align: center;
+        width: 50%;
+    }
 }

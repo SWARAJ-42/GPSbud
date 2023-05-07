@@ -33,8 +33,9 @@ body {
 /* Navigation Styling */
 .navigation {
     display: flex;
-    height: 10vh;
-    min-height: 94.7px;
+    min-height: 10vh;
+    width: 100%;
+    padding: 10px 30px;
 }
 
 .navigation ul {
@@ -70,10 +71,6 @@ body {
     height: 64px;
 }
 
-.navigation {
-    width: 100%;
-    padding: 10px 30px;
-}
 
 .navigation .navigation-left {
     display: flex;
@@ -102,7 +99,6 @@ body {
 .Main-section .Intro-div .Heading {
     text-align: center;
     font-size: 150px;
-    font-weight: 700;
     color: white;
     margin: auto;
 }
@@ -146,4 +142,51 @@ body {
 .Know-more:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .navigation{
+        position: fixed;
+        right: 0;
+        flex-direction: column;
+        width: 60%;
+        padding: 50px;
+        background-color: rgba(19, 14, 38, .8);
+        height: 100vh;
+    }
+
+    .navigation .navigation-left {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation .navigation-right {
+        width: 100%;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navigation ul li {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .Main-section .Intro-div .Heading {
+        font-size: 100px;
+    }
+    .Main-section .Intro-div .Description {
+        font-size: 25px;
+    }
+    .Main-section .Intro-div .Explore-button {
+        font-size: 15px;
+    }
+    .Main-section .Intro-div .Know-more {
+        font-size: 15px;
+        text-decoration: none;
+        transition: transform 0.4s;
+    }
 }
