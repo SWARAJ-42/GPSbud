@@ -1,11 +1,10 @@
-
 .hamburger-lines {
     position: fixed;
     display: flex;
     flex-direction: column;
     right: 0;
     padding: 30px;
-    z-index: 100;
+    z-index: -1;
 }
 
 .line {
@@ -17,6 +16,20 @@
     display: block;
 }
 
+.hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
 .visibility {
     opacity: 0;
 }
@@ -24,9 +37,28 @@
 @media only screen and (max-width: 900px) {
     .visibility {
         opacity: 1;
+        z-index: 100;
     }
 
     .hide-visibility {
         opacity: 0;
+        width: 0;
+    }
+
+    .inc-width {
+        opacity: 1;
+        width: 80%;
+    }
+
+    .hamburger-lines .animate_on_click1{
+        transform: rotate(45deg);
+    }
+
+    .hamburger-lines .animate_on_click2{
+        transform: scaleY(0);
+    }
+
+    .hamburger-lines .animate_on_click3{
+        transform: rotate(-45deg);
     }
 }
