@@ -1,0 +1,32 @@
+
+.hamburger-lines {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    padding: 30px;
+    z-index: 100;
+}
+
+.line {
+    height: 2px;
+    margin: 8px 0px;
+    background-color: aliceblue;
+    border-radius: 2px;
+    width: 50px;
+    display: block;
+}
+
+.visibility {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .visibility {
+        opacity: 1;
+    }
+
+    .hide-visibility {
+        opacity: 0;
+    }
+}
